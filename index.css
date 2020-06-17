@@ -1,5 +1,17 @@
+@import "./validation.css";
+
 /* small screen */
 @media only screen and (max-width: 600px) {
+  body .wrapper {
+    width: 330px;
+  }
+  body .action::before {
+    right: 70px;
+  }
+  body .action::after {
+    right: 70px;
+  }
+
   body .navbar {
     bottom: 0;
     width: 100vw;
@@ -169,8 +181,40 @@ main {
 h1 {
   margin: 0;
 }
+
 main {
-  padding: 2rem;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+/* sign in form  */
+.sign-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-primary);
+}
+
+.form-edge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid var(--validator);
+  border-radius: 1rem;
+  width: 50%;
+  height: auto;
+  padding: 5rem;
+  background-color: #fff;
+}
+.form-edge > h1 {
+  padding-bottom: 3rem;
+  color: dodgerblue;
 }
 
 .hide {

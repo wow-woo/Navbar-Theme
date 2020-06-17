@@ -1,0 +1,106 @@
+.wrapper {
+  position: relative;
+  border: 3px solid var(--validator);
+  border-radius: 10px;
+  height: 2rem;
+  width: 350px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.wrapper > input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+
+.wrapper > .eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wrapper > .eye > i {
+  background-color: transparent;
+  width: 100%;
+  color: rgb(155, 147, 147);
+}
+.wrapper > .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  height: 100%;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  outline: none;
+  background-color: var(--validator);
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper > .action i {
+  width: 100%;
+  background-color: transparent;
+}
+.wrapper > .no-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  height: 100%;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  outline: none;
+  background-color: var(--validator);
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper > .no-action i {
+  width: 100%;
+  background-color: transparent;
+}
+
+.wrapper .hide {
+  display: none;
+}
+
+.action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 90px;
+  display: block;
+  width: var(--checking);
+  height: 100%;
+  background-color: var(--validator);
+  transition: width var(--speed) ease;
+}
+
+.action::after {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 90px;
+  text-align: center;
+  line-height: 2rem;
+  display: block;
+  width: var(--checking);
+  height: 100%;
+  opacity: var(--opacity);
+  background-color: transparent;
+  transition: opacity var(--speed) ease-in, width 0;
+}
+
+:root {
+  --opacity: 0;
+  --checking: 0;
+  --validator: dodgerblue;
+}

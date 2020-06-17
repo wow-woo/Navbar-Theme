@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive NavBar</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script defer src="./index.js"></script>
 </head>
 
@@ -14,7 +16,7 @@
         <ul class="navbar-nav">
             <li class="logo">
                 <a href="#" class="nav-link">
-                    <span class="link-text logo-text">Fireship</span>
+                    <span class="link-text logo-text">Wow-woo</span>
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right"
                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                         class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
@@ -30,7 +32,7 @@
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item sign-li">
                 <a href="#" class="nav-link">
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cat" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -44,8 +46,36 @@
                                 class="fa-primary"></path>
                         </g>
                     </svg>
-                    <span class="link-text">Cats</span>
+                    <span class="link-text">Log in</span>
                 </a>
+                <form action="" class='sign-form hide'>
+                    <div class="form-edge">
+                        <h1>Facebook</h1>
+                        <div class="wrapper">
+                            <input type="text">
+
+                            <!-- <button class="no-action">
+                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-check hide"></i>
+                                <i class="fas fa-times hide"></i>
+                            </button> -->
+                        </div>
+                        <div class="wrapper">
+                            <input type="password" id='password'>
+
+                            <button class=" eye">
+                                <i class="far fa-eye hide" id="openEye"></i>
+                                <i class="far fa-eye-slash" id="closeEye"></i>
+                            </button>
+
+                            <button class="action" data-content=''>
+                                <i class="fas fa-arrow-right" id="arrow"></i>
+                                <i class="fas fa-check hide" id="check"></i>
+                                <i class="fas fa-times hide" id="times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </li>
 
             <li class="nav-item">
@@ -148,7 +178,7 @@
 
     <main>
 
-        <h1>CSS is Cool</h1>
+        <h1>Brilliant pictures</h1>
 
         <p>
             I'm baby kale chips affogato ennui lumbersexual, williamsburg paleo quinoa
@@ -159,7 +189,6 @@
         </p>
         <p>
             Sartorial kogi taxidermy, kickstarter synth yr irony ennui everyday carry
-            retro helvetica stumptown cloud bread squid echo park. Etsy cloud bread
             sartorial quinoa tacos beard mumblecore shaman tumblr pop-up. Twee retro
             fingerstache af helvetica pabst 8-bit leggings taiyaki portland ramps tbh
             tumblr vinyl. Neutra humblebrag bushwick portland subway tile plaid, offal
